@@ -5,7 +5,7 @@ execute pathogen#infect()
 set nocompatible                          " disable vi compatibility (fixes tab completion of file names on windows)
 
 " appearance
-"colorscheme inkpot
+colorscheme inkpot
 syntax on                                 " enable syntax highlighting
 set number                                " show line numbers
 
@@ -33,7 +33,6 @@ set smartcase                             " ... unless there is at least one cap
 " autocomplete
 " highlight
 " location of backup files
-" git
 " plugins to check out
 " - nerdcommenter
 " - the nerd tree
