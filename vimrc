@@ -1,3 +1,7 @@
+" use pathogen for more convenient plugin directory layout
+runtime bundle/pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+
 set nocompatible                          " disable vi compatibility (fixes tab completion of file names on windows)
 
 " appearance
