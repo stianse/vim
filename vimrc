@@ -26,6 +26,21 @@ set ignorecase                            " case insensetive searches ...
 set smartcase                             " ... unless there is at least one capital letter
 
 
+" Hide/unhide prefix with long file names
+" :call ConcealPath()
+au BufReadPost quickfix :call ConcealPath()
+
+function ConcealPath()
+       syntax match ConcealedPath /\v^\/[^|]*\// conceal cchar=&
+       setlocal conceallevel=2
+       setlocal concealcursor=nvic
+       setlocal nowrap
+endfunction
+
+function UnconcealPath()
+       setlocal conceallevel=0
+       setlocal wrap
+endfunction
 
 " indentation in python
 " make
